@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/danielfunessolera/spring-cloud-config-server-repository
+          default-label: main
+          username: danielfunessolera
+          password: '{cipher}059cc099e6751da7c88b58c2448c43f7b7e87171d8f4587a42dd2495f1c0fed0e9bf3dddae7826778b0713cdced1bb0f3ce1d9637410ce655c6fa076d29ea280'
+          clone-on-start: true
+    fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: '{cipher}c73dc59e41f6dcc3f87fca6c15aa4fda01a75e77dbf6d1bc7d603c8d671a188f20cb970bb762ea8e63b89f6147878498'
+
+encrypt:
+  key: 'Demo_Pwd!2020'
